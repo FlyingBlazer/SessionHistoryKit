@@ -1,14 +1,11 @@
 /*
  * Session History Kit v0.1 - https://github.com/renfeisong/SessionHistoryKit
- *
  * history-kit.js
- *
  *
  * TERMS OF USE - Session History Kit
  * Released to the Public Domain
  * 
  * 2015 Renfei Song, All rights released.
- * 
  */
 
 "use strict";
@@ -89,11 +86,7 @@ SessionHistoryKit.SessionHistory = function(containerId, options) {
 		canvas.style.zIndex = '0';
 		
 		var devicePixelRatio = window.devicePixelRatio || 1;
-		var backingStorePixelRatio = ctx.webkitBackingStorePixelRatio || 
-									 ctx.mozBackingStorePixelRatio || 
-									 ctx.msBackingStorePixelRatio || 
-									 ctx.oBackingStorePixelRatio || 
-									 ctx.backingStorePixelRatio || 1;
+		var backingStorePixelRatio = ctx.webkitBackingStorePixelRatio || ctx.mozBackingStorePixelRatio || ctx.msBackingStorePixelRatio || ctx.oBackingStorePixelRatio || ctx.backingStorePixelRatio || 1;
 		var ratio = devicePixelRatio / backingStorePixelRatio;
 		if (ratio !== 1) {
 			canvas.width = this.width * ratio;
