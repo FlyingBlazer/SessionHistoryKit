@@ -63,4 +63,8 @@ minSpacing | 最小节点间距，默认为`30`（该数值不要小于 2 倍最
 </script>
 ```
 
+效果：
+
+<img src="http://img.renfei.org/2015/07/shk.png" width="446" height="169">
+
 可运行的实例可参考 `history.html`。
