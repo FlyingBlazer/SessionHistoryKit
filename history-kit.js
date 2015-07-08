@@ -41,8 +41,8 @@ SessionHistoryKit.SessionHistory = function(containerId, options) {
 
 	this.bind = function(scope, fn) {
    		return function() {
-      		return fn.apply(scope, arguments);
-   		}
+			return fn.apply(scope, arguments);
+		}
 	};
 
 	this.initSessionCard = function() {
@@ -249,11 +249,11 @@ SessionHistoryKit.SessionHistory = function(containerId, options) {
 	};
 
 	this.mousePosition = function(event) {
-    	var rect = this.canvas.getBoundingClientRect();
-    	return {
-      		x: event.clientX - rect.left,
-      		y: event.clientY - rect.top
-    	};
+		var rect = this.canvas.getBoundingClientRect();
+		return {
+			x: event.clientX - rect.left,
+			y: event.clientY - rect.top
+		};
 	};
 
 	this.mouseInCircle = function(pos, center, radius) {
