@@ -5,7 +5,7 @@
 #### 初始化 `SessionHistory` 对象
 
 ```javascript
-var sessionHistory = SessionHistoryKit.SessionHistory(containerId, options);
+var sessionHistory = new SessionHistoryKit.SessionHistory(containerId, options);
 ```
 
 参数 | 含义
